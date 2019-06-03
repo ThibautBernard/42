@@ -1,0 +1,7 @@
+Credentials cache: API:02D5D90A-90F4-40DA-A95B-7AB648A959BA
+        Principal: tbernard@42.FR
+
+  Issued                Expires               Principal
+Jun  3 16:30:37 2019  Jun 10 16:30:37 2019  krbtgt/42.FR@42.FR
+Jun  3 16:30:39 2019  Jun 10 16:30:37 2019  ldap/ldap-proxy.42.fr@42.FR
+Jun  3 16:30:39 2019  Jun 10 16:30:37 2019  HTTP/student-storage-1.42.fr@42.FR
