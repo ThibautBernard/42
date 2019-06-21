@@ -1,42 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbernard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/20 20:58:27 by tbernard          #+#    #+#             */
-/*   Updated: 2019/06/21 09:15:21 by tbernard         ###   ########.fr       */
+/*   Created: 2019/06/20 22:10:27 by tbernard          #+#    #+#             */
+/*   Updated: 2019/06/21 14:07:30 by tbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_putchar(char c)
+int		ft_atoi(char *str)
 {
-	write(1, &c, 1);
-}
+	int i; 
+	int x;
+	int y;
 
-void	ft_putnbr(int nb)
-{	
-	if (nb == -2147483648)
+	i = 0;
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 	{
-		ft_putchar('-');
-		ft_putchar('2');
-		ft_putnbr(147483648);
-	}
-	else if (nb > 0 && nb < 10)
+		i++;
+	}	
+	x = 0;
+	while (str[x] != 42)
 	{
-		ft_putchar(nb + 48); 
-	}
-	else if(nb < 0)
-	{
-		ft_putchar('-');
-		ft_putnbr(nb * (-1));
-	}
-	else
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		x++;
+	
 	}
 }
