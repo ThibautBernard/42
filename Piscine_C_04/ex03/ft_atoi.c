@@ -6,16 +6,9 @@
 /*   By: tbernard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 22:10:27 by tbernard          #+#    #+#             */
-/*   Updated: 2019/06/23 20:29:46 by tbernard         ###   ########.fr       */
+/*   Updated: 2019/06/24 21:32:22 by tbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 int		ft_atoi(char *str)
 {
