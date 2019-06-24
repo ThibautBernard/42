@@ -6,7 +6,7 @@
 /*   By: tbernard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/23 21:11:45 by tbernard          #+#    #+#             */
-/*   Updated: 2019/06/23 23:05:16 by tbernard         ###   ########.fr       */
+/*   Updated: 2019/06/24 10:46:28 by tbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,13 @@ void ft_putstr(char *str)
 
 
 int main(int argc, char **argv)
-{
-	
-	int i;
-	int j;	
-	
-	i = 1;
-	while(i < argc)
+{	
+	argc--;	
+	while(0 < argc)
 	{
-		ft_putstr(argv[i]);
+		ft_putstr(argv[argc]);
 		ft_putchar('\n');	
-		i++;
-	}
+		argc--;
+	}	
 
 }
