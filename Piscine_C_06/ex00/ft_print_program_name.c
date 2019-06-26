@@ -6,13 +6,13 @@
 /*   By: tbernard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/23 18:15:28 by tbernard          #+#    #+#             */
-/*   Updated: 2019/06/23 23:30:24 by tbernard         ###   ########.fr       */
+/*   Updated: 2019/06/26 09:34:33 by tbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-int main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
-    argc = 0;
-    write(1, argv[0], 7);
+	write(1, argv[0], 7);
 }
