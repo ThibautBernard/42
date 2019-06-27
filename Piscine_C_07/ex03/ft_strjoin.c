@@ -6,7 +6,7 @@
 /*   By: tbernard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/25 19:34:45 by tbernard          #+#    #+#             */
-/*   Updated: 2019/06/27 15:37:59 by tbernard         ###   ########.fr       */
+/*   Updated: 2019/06/27 18:04:21 by tbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,18 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
+int		ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
 int		ft_full_strlen(char **strs, int size, char *sep)
 {
 	int i;
@@ -46,18 +58,6 @@ int		ft_full_strlen(char **strs, int size, char *sep)
 		len = len + ft_strlen(sep) * (size);
 		return (len);
 	}
-}
-
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
 }
 
 char	*ft_strjoin(int size, char **strs, char *sep)
